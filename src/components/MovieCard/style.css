@@ -1,0 +1,47 @@
+.movie-card {
+    margin: 20px auto;
+    cursor: pointer;
+    max-width: 300px;
+}
+
+.movie-card:hover img {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.movie-card img {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.movie-card .movie-card-details {
+    margin: 15px 0;
+}
+
+.movie-card .movie-card-details .movie-title {
+    font-size: 1rem;
+}
+
+.movie-card .movie-card-details .movie-title, .movie-genres, .movie-stars-and-release {
+    margin: 8px 0;
+}
+
+.movie-card .movie-card-details .movie-genres {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.movie-card .movie-card-details .movie-stars-and-release {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-card .movie-card-details .movie-stars-and-release .movie-vote-avg {
+    display: flex;
+    align-items: center;
+    color: var(--logo-color);
+}
+
+.movie-card .movie-card-details .movie-stars-and-release .movie-vote-avg span {
+    margin: 0 6px;
+}

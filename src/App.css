@@ -1,0 +1,10 @@
+main {
+  margin: 20px;
+}
+
+.movies-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}

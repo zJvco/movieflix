@@ -1,0 +1,7 @@
+.movie-details-container {
+    display: flex;
+}
+
+.movie-details-container .left {
+    margin-right: 12px;
+}
