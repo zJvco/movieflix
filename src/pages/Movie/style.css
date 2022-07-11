@@ -5,3 +5,12 @@
 .movie-details-container .left {
     margin-right: 12px;
 }
+
+.movie-details-container .right > * {
+    margin: 10px 0;
+} 
+
+.movie-details-container .right .vote-and-release-container {
+    display: flex;
+    align-items: center;
+}

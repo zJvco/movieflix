@@ -1,15 +1,15 @@
 export function formatCurrency(number) {
     const temp = number.toString().split("");
 
-    let _ = "$";
-    
-    for (let i = temp.length - 1; i >= 0; i--) {
-        if ((i + 1) % 3 === 0) {
-            _ += ",";
+    let x = "$";
+
+    for (let size = (temp.length - 1), i = size; i >= 0; i--) {
+        x += temp[Math.abs(i - size)];
+
+        if (i % 3 === 0 && i !== 0) {
+            x += ",";
         }
-        
-        _ += temp[i];
     }
 
-    return _ += ".00";
+    return x += ".00";
 }

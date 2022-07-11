@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import { FaStar } from 'react-icons/fa';
+
+import VoteText from './VoteText';
 
 import { API_IMG, API_TOKEN, API_URL } from '../../contants/api';
 
@@ -37,17 +38,18 @@ export default function Movie() {
             </section>
             <section className="right">
                 <h3>{movie?.original_title}</h3>
-                <div className='group'>
-                    <span className='movie-vote-avg'>
-                        <FaStar />
-                        <span>{movie?.vote_average}</span>
-                    </span>
+                <div className='vote-and-release-container'>
+                    <VoteText avg={movie?.vote_average} />
                     <span className='movie-release-date'>{movie?.release_date}</span>
                 </div>
                 <p>{movie?.overview}</p>
                 <div className='revenue-content'>
                     <h5>Revenue:</h5>
                     <p>{formatCurrency(movie?.revenue || "")}</p>
+                </div>
+                <div className='budget-content'>
+                    <h5>Budget:</h5>
+                    <p>{formatCurrency(movie?.budget || "")}</p>
                 </div>
             </section>
         </div>

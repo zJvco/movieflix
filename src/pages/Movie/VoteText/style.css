@@ -1,0 +1,10 @@
+.vote-text {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: var(--logo-color);
+}
+
+.vote-text svg {
+    margin-right: 4px;
+}
