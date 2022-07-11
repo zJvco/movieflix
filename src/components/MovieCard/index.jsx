@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FaStar } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
+import VoteText from '../VoteText';
+
 import { API_URL, API_TOKEN, API_IMG } from '../../contants/api';
 
 import "./style.css";
@@ -45,10 +47,7 @@ export default function MovieCard({ movie }) {
                     })}
                 </p>
                 <div className='movie-stars-and-release'>
-                    <div className='movie-vote-avg'>
-                        <FaStar />
-                        <span>{movie.vote_average}</span>
-                    </div>
+                    <VoteText avg={movie.vote_average} />
                     <span className='movie-release-date'>{movie.release_date}</span>
                 </div>
             </div>

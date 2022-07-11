@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 
-import VoteText from './VoteText';
+import VoteText from '../../components/VoteText';
 
 import { API_IMG, API_TOKEN, API_URL } from '../../contants/api';
 
